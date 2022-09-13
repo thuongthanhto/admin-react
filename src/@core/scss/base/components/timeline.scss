@@ -2,7 +2,7 @@
 //   File Name: timeline.scss
 //   Description: Timeline style.
 //   ----------------------------------------------------------------------------------------
-//   Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//   Item Name: Vuejs, HTML & Laravel Admin Dashboard Template
 //   Author: PIXINVENT
 //   Author URL: http://www.themeforest.net/user/pixinvent
 // ==========================================================================================
@@ -53,7 +53,10 @@
 
         &:before {
           content: '';
-          background: rgba($color: $timeline-point-indicator-color, $alpha: 0.12);
+          background: rgba(
+            $color: $timeline-point-indicator-color,
+            $alpha: 0.12
+          );
           height: $timeline-point-indicator-wrapper-size;
           width: $timeline-point-indicator-wrapper-size;
           display: block;

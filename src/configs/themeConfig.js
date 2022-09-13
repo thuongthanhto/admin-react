@@ -3,8 +3,8 @@
 //Template config options
 const themeConfig = {
   app: {
-    appName: 'Vuexy',
-    appLogoImage: require('@src/assets/images/logo/logo.svg').default
+    appName: 'Admin',
+    appLogoImage: require('@src/assets/images/logo/logo.svg').default,
   },
   layout: {
     isRTL: false,
@@ -14,19 +14,19 @@ const themeConfig = {
     contentWidth: 'boxed', // full, boxed
     menu: {
       isHidden: false,
-      isCollapsed: false
+      isCollapsed: false,
     },
     navbar: {
       // ? For horizontal menu, navbar type will work for navMenu type
       type: 'floating', // static , sticky , floating, hidden
-      backgroundColor: 'white' // BS color options [primary, success, etc]
+      backgroundColor: 'white', // BS color options [primary, success, etc]
     },
     footer: {
-      type: 'static' // static, sticky, hidden
+      type: 'static', // static, sticky, hidden
     },
     customizer: false,
-    scrollTop: true // Enable scroll to top button
-  }
-}
+    scrollTop: true, // Enable scroll to top button
+  },
+};
 
-export default themeConfig
+export default themeConfig;

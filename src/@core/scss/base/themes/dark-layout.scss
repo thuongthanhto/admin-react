@@ -2,7 +2,7 @@
 // 	File Name: dark-layout.scss
 // 	Description: SCSS file for dark layout.
 // 	----------------------------------------------------------------------------------------------
-// 	Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+// 	Item Name: Vuejs, HTML & Laravel Admin Dashboard Template
 // 	Author: PIXINVENT
 // 	Author URL: http://www.themeforest.net/user/pixinvent
 // ================================================================================================
@@ -112,7 +112,12 @@
 
   // main navbar and header navbar shadow(generic navbar)
   .header-navbar-shadow {
-    background: linear-gradient(180deg, rgba(22, 29, 49, 0.9) 44%, rgba(22, 29, 49, 0.43) 73%, rgba(22, 29, 49, 0));
+    background: linear-gradient(
+      180deg,
+      rgba(22, 29, 49, 0.9) 44%,
+      rgba(22, 29, 49, 0.43) 73%,
+      rgba(22, 29, 49, 0)
+    );
   }
 
   // main header navbar dark style
@@ -463,7 +468,11 @@
     color: $theme-dark-body-color;
     &:after {
       background-image: str-replace(
-        str-replace($accordion-button-icon, '#{$accordion-icon-color}', $theme-dark-body-color),
+        str-replace(
+          $accordion-button-icon,
+          '#{$accordion-icon-color}',
+          $theme-dark-body-color
+        ),
         '#',
         '%23'
       );
@@ -628,7 +637,11 @@
       color: $theme-dark-body-color;
       box-shadow: 0 3px 8px 0 rgba(11, 10, 25, 0.49) !important;
       background-image: str-replace(
-        str-replace($btn-close-bg, '#{$btn-close-color}', $theme-dark-body-color),
+        str-replace(
+          $btn-close-bg,
+          '#{$btn-close-color}',
+          $theme-dark-body-color
+        ),
         '#',
         '%23'
       );
@@ -645,7 +658,17 @@
   /* Close btn */
   .btn-close {
     background: transparent
-      escape-svg(str-replace(str-replace($btn-close-bg, '#{$btn-close-color}', $theme-dark-body-color), '#', '%23'))
+      escape-svg(
+        str-replace(
+          str-replace(
+            $btn-close-bg,
+            '#{$btn-close-color}',
+            $theme-dark-body-color
+          ),
+          '#',
+          '%23'
+        )
+      )
       center / $btn-close-width auto no-repeat;
   }
 
@@ -730,7 +753,11 @@
           .page-link {
             &:before {
               background-image: url(str-replace(
-                str-replace($chevron-left, 'currentColor', $theme-dark-text-muted-color),
+                str-replace(
+                  $chevron-left,
+                  'currentColor',
+                  $theme-dark-text-muted-color
+                ),
                 '#',
                 '%23'
               ));
@@ -751,7 +778,11 @@
           .page-link {
             &:after {
               background-image: url(str-replace(
-                str-replace($chevron-right, 'currentColor', $theme-dark-text-muted-color),
+                str-replace(
+                  $chevron-right,
+                  'currentColor',
+                  $theme-dark-text-muted-color
+                ),
                 '#',
                 '%23'
               ));
@@ -861,7 +892,11 @@
       .btn-close {
         background-color: transparent !important;
         background-image: str-replace(
-          str-replace($btn-close-bg, '#{$btn-close-color}', $theme-dark-body-color),
+          str-replace(
+            $btn-close-bg,
+            '#{$btn-close-color}',
+            $theme-dark-body-color
+          ),
           '#',
           '%23'
         );
@@ -914,7 +949,11 @@
     }
 
     &.list-group-circle .list-group-item:after {
-      background-image: url(str-replace(str-replace($circle, 'currentColor', $theme-dark-body-color), '#', '%23'));
+      background-image: url(str-replace(
+        str-replace($circle, 'currentColor', $theme-dark-body-color),
+        '#',
+        '%23'
+      ));
     }
   }
 
@@ -936,7 +975,8 @@
     .avatar {
       img,
       .avatar-content {
-        box-shadow: 0 0 0 2px $theme-dark-card-bg, inset 0 0 0 1px rgba($theme-dark-card-bg, 0.07);
+        box-shadow: 0 0 0 2px $theme-dark-card-bg,
+          inset 0 0 0 1px rgba($theme-dark-card-bg, 0.07);
       }
     }
   }
@@ -1170,7 +1210,11 @@
       border-color: $theme-dark-switch-bg-disabled;
     }
     .form-check-input:not(:checked):not(:focus) {
-      background-image: str-replace(str-replace($form-switch-bg-image, '#{$form-switch-color}', $white), '#', '%23');
+      background-image: str-replace(
+        str-replace($form-switch-bg-image, '#{$form-switch-color}', $white),
+        '#',
+        '%23'
+      );
     }
   }
 
@@ -1427,7 +1471,11 @@
           }
           &:after {
             background-image: url(str-replace(
-              str-replace($chevron-down, 'currentColor', $theme-dark-body-color),
+              str-replace(
+                $chevron-down,
+                'currentColor',
+                $theme-dark-body-color
+              ),
               '#',
               '%23'
             ));
@@ -1628,7 +1676,11 @@
         .email-info-dropup {
           .dropdown-toggle::after {
             background-image: url(str-replace(
-              str-replace($chevron-down, 'currentColor', $theme-dark-text-muted-color),
+              str-replace(
+                $chevron-down,
+                'currentColor',
+                $theme-dark-text-muted-color
+              ),
               '#',
               '%23'
             ));
@@ -1830,7 +1882,7 @@
     }
   }
   .kanban-board.gu-mirror,
-    .kanban-item.gu-mirror {
+  .kanban-item.gu-mirror {
     background-color: $theme-dark-card-bg !important;
   }
 
@@ -2224,7 +2276,9 @@
 
   /********** HORIZONTAL LAYOUT **********/
   .horizontal-layout {
-    &.navbar-sticky .horizontal-menu-wrapper .navbar-horizontal.header-navbar.fixed-top {
+    &.navbar-sticky
+      .horizontal-menu-wrapper
+      .navbar-horizontal.header-navbar.fixed-top {
       box-shadow: 0 4px 24px 0 rgba($black, 0.75) !important;
     }
     .horizontal-menu-wrapper {
@@ -2247,7 +2301,11 @@
           .active {
             .nav-link {
               &.dropdown-toggle::after {
-                background-image: url(str-replace(str-replace($chevron-down, 'currentColor', $white), '#', '%23'));
+                background-image: url(str-replace(
+                  str-replace($chevron-down, 'currentColor', $white),
+                  '#',
+                  '%23'
+                ));
               }
             }
           }
@@ -2259,7 +2317,11 @@
           .nav-link {
             &.dropdown-toggle::after {
               background-image: url(str-replace(
-                str-replace($chevron-down, 'currentColor', $theme-dark-body-color),
+                str-replace(
+                  $chevron-down,
+                  'currentColor',
+                  $theme-dark-body-color
+                ),
                 '#',
                 '%23'
               ));
@@ -2291,7 +2353,11 @@
           .dropdown-toggle {
             &::after {
               background-image: url(str-replace(
-                str-replace($chevron-right, 'currentColor', $theme-dark-body-color),
+                str-replace(
+                  $chevron-right,
+                  'currentColor',
+                  $theme-dark-body-color
+                ),
                 '#',
                 '%23'
               ));
@@ -2299,7 +2365,11 @@
             &:hover,
             &:active {
               &::after {
-                background-image: url(str-replace(str-replace($chevron-right, 'currentColor', $white), '#', '%23'));
+                background-image: url(str-replace(
+                  str-replace($chevron-right, 'currentColor', $white),
+                  '#',
+                  '%23'
+                ));
               }
             }
           }

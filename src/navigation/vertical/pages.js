@@ -1,5 +1,5 @@
 // ** Icons Import
-import { FileText, Circle, Square, UserCheck } from 'react-feather'
+import { FileText, Circle, Square, UserCheck } from 'react-feather';
 
 export default [
   {
@@ -12,7 +12,7 @@ export default [
         title: 'Account Settings',
         icon: <Circle size={12} />,
         permissions: ['admin', 'editor'],
-        navLink: '/pages/account-settings'
+        navLink: '/pages/account-settings',
       },
       {
         id: 'profile',
@@ -20,14 +20,14 @@ export default [
         icon: <Circle size={12} />,
         permissions: ['admin', 'editor'],
         navLink: '/pages/profile',
-        collapsed: true
+        collapsed: true,
       },
       {
         id: 'faq',
         title: 'FAQ',
         icon: <Circle size={12} />,
         permissions: ['admin', 'editor'],
-        navLink: '/pages/faq'
+        navLink: '/pages/faq',
       },
       {
         id: 'knowledgeBase',
@@ -35,28 +35,31 @@ export default [
         icon: <Circle size={12} />,
         permissions: ['admin', 'editor'],
         navLink: '/pages/knowledge-base',
-        parentOf: ['/pages/knowledge-base/category/questions', '/pages/knowledge-base/category']
+        parentOf: [
+          '/pages/knowledge-base/category/questions',
+          '/pages/knowledge-base/category',
+        ],
       },
       {
         id: 'pricing',
         title: 'Pricing',
         icon: <Circle size={12} />,
         permissions: ['admin', 'editor'],
-        navLink: '/pages/pricing'
+        navLink: '/pages/pricing',
       },
       {
         id: 'license',
         title: 'License',
         icon: <Circle size={12} />,
         permissions: ['admin', 'editor'],
-        navLink: '/pages/license'
+        navLink: '/pages/license',
       },
       {
         id: 'api-key',
         title: 'API Key',
         icon: <Circle size={12} />,
         permissions: ['admin', 'editor'],
-        navLink: '/pages/api-key'
+        navLink: '/pages/api-key',
       },
       {
         id: 'blog',
@@ -67,21 +70,21 @@ export default [
             id: 'blogList',
             title: 'List',
             permissions: ['admin', 'editor'],
-            navLink: '/pages/blog/list'
+            navLink: '/pages/blog/list',
           },
           {
             id: 'blogDetail',
             title: 'Detail',
             permissions: ['admin', 'editor'],
-            navLink: '/pages/blog/detail'
+            navLink: '/pages/blog/detail',
           },
           {
             id: 'blogEdit',
             title: 'Edit',
             permissions: ['admin', 'editor'],
-            navLink: '/pages/blog/edit'
-          }
-        ]
+            navLink: '/pages/blog/edit',
+          },
+        ],
       },
       {
         id: 'mailTemplate',
@@ -92,51 +95,57 @@ export default [
             id: 'welcomeTemp',
             title: 'Welcome',
             permissions: ['admin', 'editor'],
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-welcome.html',
+            navLink:
+              'https://pixinvent.com/demo/mail-template/mail-welcome.html',
             newTab: true,
-            externalLink: true
+            externalLink: true,
           },
           {
             id: 'resetPassTemp',
             title: 'Reset Password',
             permissions: ['admin', 'editor'],
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-reset-password.html',
+            navLink:
+              'https://pixinvent.com/demo/mail-template/mail-reset-password.html',
             newTab: true,
-            externalLink: true
+            externalLink: true,
           },
           {
             id: 'verifyEmailTemp',
             title: 'Verify Email',
             permissions: ['admin', 'editor'],
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-verify-email.html',
+            navLink:
+              'https://pixinvent.com/demo/mail-template/mail-verify-email.html',
             newTab: true,
-            externalLink: true
+            externalLink: true,
           },
           {
             id: 'deactivateAccountTemp',
             title: 'Deactivate Account',
             permissions: ['admin', 'editor'],
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-deactivate-account.html',
+            navLink:
+              'https://pixinvent.com/demo/mail-template/mail-deactivate-account.html',
             newTab: true,
-            externalLink: true
+            externalLink: true,
           },
           {
             id: 'invoiceMailTemp',
             title: 'Invoice',
             permissions: ['admin', 'editor'],
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-invoice.html',
+            navLink:
+              'https://pixinvent.com/demo/mail-template/mail-invoice.html',
             newTab: true,
-            externalLink: true
+            externalLink: true,
           },
           {
             id: 'promotionalMailTemp',
             title: 'Promotional',
             permissions: ['admin', 'editor'],
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-promotional.html',
+            navLink:
+              'https://pixinvent.com/demo/mail-template/mail-promotional.html',
             newTab: true,
-            externalLink: true
-          }
-        ]
+            externalLink: true,
+          },
+        ],
       },
       {
         id: 'miscellaneous',
@@ -148,7 +157,7 @@ export default [
             title: 'Coming Soon',
             permissions: ['admin', 'editor'],
             navLink: '/misc/coming-soon',
-            newTab: true
+            newTab: true,
           },
 
           {
@@ -156,25 +165,25 @@ export default [
             title: 'Not Authorized',
             permissions: ['admin', 'editor'],
             navLink: '/misc/not-authorized',
-            newTab: true
+            newTab: true,
           },
           {
             id: 'maintenance',
             title: 'Maintenance',
             permissions: ['admin', 'editor'],
             navLink: '/misc/maintenance',
-            newTab: true
+            newTab: true,
           },
           {
             id: 'error',
             title: 'Error',
             permissions: ['admin', 'editor'],
             navLink: '/misc/error',
-            newTab: true
-          }
-        ]
-      }
-    ]
+            newTab: true,
+          },
+        ],
+      },
+    ],
   },
   {
     id: 'authentication',
@@ -191,16 +200,16 @@ export default [
             title: 'Basic',
             permissions: ['admin', 'editor'],
             navLink: '/pages/login-basic',
-            newTab: true
+            newTab: true,
           },
           {
             id: 'login-cover',
             title: 'Cover',
             permissions: ['admin', 'editor'],
             navLink: '/pages/login-cover',
-            newTab: true
-          }
-        ]
+            newTab: true,
+          },
+        ],
       },
       {
         id: 'register',
@@ -212,16 +221,16 @@ export default [
             title: 'Basic',
             permissions: ['admin', 'editor'],
             navLink: '/pages/register-basic',
-            newTab: true
+            newTab: true,
           },
           {
             id: 'register-cover',
             title: 'Cover',
             permissions: ['admin', 'editor'],
             navLink: '/pages/register-cover',
-            newTab: true
-          }
-        ]
+            newTab: true,
+          },
+        ],
       },
       {
         id: 'forgot-password',
@@ -233,16 +242,16 @@ export default [
             title: 'Basic',
             permissions: ['admin', 'editor'],
             navLink: '/pages/forgot-password-basic',
-            newTab: true
+            newTab: true,
           },
           {
             id: 'forgotPassword-cover',
             title: 'Cover',
             permissions: ['admin', 'editor'],
             navLink: '/pages/forgot-password-cover',
-            newTab: true
-          }
-        ]
+            newTab: true,
+          },
+        ],
       },
       {
         id: 'resetPassword',
@@ -254,16 +263,16 @@ export default [
             title: 'Basic',
             permissions: ['admin', 'editor'],
             navLink: '/pages/reset-password-basic',
-            newTab: true
+            newTab: true,
           },
           {
             id: 'resetPassword-cover',
             title: 'Cover',
             permissions: ['admin', 'editor'],
             navLink: '/pages/reset-password-cover',
-            newTab: true
-          }
-        ]
+            newTab: true,
+          },
+        ],
       },
       {
         id: 'verify-email',
@@ -275,16 +284,16 @@ export default [
             title: 'Basic',
             permissions: ['admin', 'editor'],
             navLink: '/pages/verify-email-basic',
-            newTab: true
+            newTab: true,
           },
           {
             id: 'verify-email-cover',
             title: 'Cover',
             permissions: ['admin', 'editor'],
             navLink: '/pages/verify-email-cover',
-            newTab: true
-          }
-        ]
+            newTab: true,
+          },
+        ],
       },
       {
         id: 'two-step',
@@ -296,24 +305,24 @@ export default [
             title: 'Basic',
             permissions: ['admin', 'editor'],
             navLink: '/pages/two-steps-basic',
-            newTab: true
+            newTab: true,
           },
           {
             id: 'two-steps-cover',
             title: 'Cover',
             permissions: ['admin', 'editor'],
             navLink: '/pages/two-steps-cover',
-            newTab: true
-          }
-        ]
-      }
-    ]
+            newTab: true,
+          },
+        ],
+      },
+    ],
   },
   {
     id: 'modal-examples',
     title: 'Modal Examples',
     icon: <Square size={12} />,
     permissions: ['admin', 'editor'],
-    navLink: '/pages/modal-examples'
-  }
-]
+    navLink: '/pages/modal-examples',
+  },
+];

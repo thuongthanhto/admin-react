@@ -1,9 +1,9 @@
 // ** Icons Import
-import { Menu, Circle, EyeOff, Folder, LifeBuoy, Shield } from 'react-feather'
+import { Menu, Circle, EyeOff, Folder, LifeBuoy, Shield } from 'react-feather';
 
 export default [
   {
-    header: 'Misc'
+    header: 'Misc',
   },
   {
     id: 'access-control',
@@ -11,7 +11,7 @@ export default [
     icon: <Shield size={12} />,
     action: 'read',
     resource: 'ACL',
-    navLink: '/access-control'
+    navLink: '/access-control',
   },
   {
     id: 'menuLevels',
@@ -22,7 +22,7 @@ export default [
         id: 'secondLevel',
         title: 'Second Level 2.1',
         icon: <Circle size={12} />,
-        navLink: ''
+        navLink: '',
       },
       {
         id: 'secondLevel1',
@@ -32,23 +32,23 @@ export default [
           {
             id: 'ThirdLevel',
             title: 'Third Level 3.1',
-            navLink: ''
+            navLink: '',
           },
           {
             id: 'ThirdLevel1',
             title: 'Third Level 3.2',
-            navLink: ''
-          }
-        ]
-      }
-    ]
+            navLink: '',
+          },
+        ],
+      },
+    ],
   },
   {
     id: 'disabledMenu',
     title: 'Disabled Menu',
     icon: <EyeOff size={20} />,
     navLink: '#',
-    disabled: true
+    disabled: true,
   },
   {
     id: 'documentation',
@@ -56,7 +56,8 @@ export default [
     icon: <Folder size={20} />,
     externalLink: true,
     newTab: true,
-    navLink: 'https://pixinvent.com/demo/vuexy-react-admin-dashboard-template/documentation'
+    navLink:
+      'https://pixinvent.com/demo/react-admin-dashboard-template/documentation',
   },
   {
     id: 'raiseSupport',
@@ -64,6 +65,6 @@ export default [
     icon: <LifeBuoy size={20} />,
     externalLink: true,
     newTab: true,
-    navLink: 'https://pixinvent.ticksy.com/'
-  }
-]
+    navLink: 'https://pixinvent.ticksy.com/',
+  },
+];

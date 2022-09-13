@@ -3,7 +3,7 @@
     Description: Contain header navigation bar, vertical main navigation bar and
     horiznotal main navigation bar related SCSS.
     ----------------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+    Item Name: Vuejs, HTML & Laravel Admin Dashboard Template
     Author: PIXINVENT
     Author URL: http://www.themeforest.net/user/pixinvent
 ================================================================================================*/
@@ -67,7 +67,9 @@
     position: fixed;
     right: 0;
     margin: #{$floating-nav-margin} auto 0;
-    width: calc(100vw - (100vw - 100%) - calc(#{$content-padding} * 2) - #{$menu-expanded-width});
+    width: calc(
+      100vw - (100vw - 100%) - calc(#{$content-padding} * 2) - #{$menu-expanded-width}
+    );
     border-radius: $card-border-radius;
     z-index: 12;
   }
@@ -293,7 +295,8 @@
           }
 
           img {
-            box-shadow: 0 4px 8px 0 rgba($black, 0.12), 0 2px 4px 0 rgba($black, 0.08);
+            box-shadow: 0 4px 8px 0 rgba($black, 0.12),
+              0 2px 4px 0 rgba($black, 0.08);
           }
         }
 

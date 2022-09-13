@@ -2,7 +2,7 @@
 //  File Name: custom-rtl.scss
 //  Description: RTL support SCSS file.
 //  ----------------------------------------------------------------------------------------------
-//  Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//  Item Name: Vuejs, HTML & Laravel Admin Dashboard Template
 //  Author: PIXINVENT
 //  Author URL: http://www.themeforest.net/user/pixinvent
 // ================================================================================================
@@ -45,8 +45,16 @@ samp {
 }
 
 // Transformed menu icons
-.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.has-sub > a:after,
-.vertical-layout.vertical-overlay-menu.menu-open .main-menu .navigation li.has-sub > a:after {
+.vertical-layout.vertical-menu-modern.menu-expanded
+  .main-menu
+  .navigation
+  li.has-sub
+  > a:after,
+.vertical-layout.vertical-overlay-menu.menu-open
+  .main-menu
+  .navigation
+  li.has-sub
+  > a:after {
   transform: rotate(180deg);
 }
 .vertical-layout.vertical-menu-modern.menu-expanded
@@ -58,8 +66,15 @@ samp {
 }
 
 // Horizontal menu
-.horizontal-menu .header-navbar.navbar-horizontal .dropdown-menu .dropdown-toggle::after {
-  background-image: url(str-replace(str-replace($chevron-left, 'currentColor', $body-color), '#', '%23'));
+.horizontal-menu
+  .header-navbar.navbar-horizontal
+  .dropdown-menu
+  .dropdown-toggle::after {
+  background-image: url(str-replace(
+    str-replace($chevron-left, 'currentColor', $body-color),
+    '#',
+    '%23'
+  ));
 }
 
 // Dropdown RTL Changes
@@ -102,7 +117,11 @@ samp {
 .dropstart {
   .dropdown-toggle {
     &::before {
-      background-image: url(str-replace(str-replace($chevron-right, 'currentColor', $white), '#', '%23')) !important;
+      background-image: url(str-replace(
+        str-replace($chevron-right, 'currentColor', $white),
+        '#',
+        '%23'
+      )) !important;
     }
   }
   .dropdown-menu {
@@ -113,7 +132,11 @@ samp {
 .dropend {
   .dropdown-toggle {
     &::after {
-      background-image: url(str-replace(str-replace($chevron-left, 'currentColor', $white), '#', '%23')) !important;
+      background-image: url(str-replace(
+        str-replace($chevron-left, 'currentColor', $white),
+        '#',
+        '%23'
+      )) !important;
     }
   }
   .dropdown-menu {
@@ -128,10 +151,14 @@ samp {
 }
 
 // Select2
-.select2-container--default .select2-selection--single .select2-selection__arrow {
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
   left: 1px;
 }
-.select2-container--default .select2-selection--multiple .select2-selection__choice {
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice {
   float: right;
 }
 .select2-search__field {

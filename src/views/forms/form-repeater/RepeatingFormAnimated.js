@@ -1,88 +1,130 @@
 // ** React Imports
-import { useState } from 'react'
+import { useState } from 'react';
 
 // ** Custom Components
-import Repeater from '@components/repeater'
+import Repeater from '@components/repeater';
 
 // ** Third Party Components
-import { X, Plus } from 'react-feather'
-import { SlideDown } from 'react-slidedown'
+import { X, Plus } from 'react-feather';
+import { SlideDown } from 'react-slidedown';
 
 // ** Reactstrap Imports
-import { Row, Col, Card, CardHeader, CardBody, CardText, Form, Label, Input, Button } from 'reactstrap'
+import {
+  Row,
+  Col,
+  Card,
+  CardHeader,
+  CardBody,
+  CardText,
+  Form,
+  Label,
+  Input,
+  Button,
+} from 'reactstrap';
 const RepeatingForm = () => {
   // ** State
-  const [count, setCount] = useState(1)
+  const [count, setCount] = useState(1);
 
   const increaseCount = () => {
-    setCount(count + 1)
-  }
+    setCount(count + 1);
+  };
 
-  const deleteForm = e => {
-    e.preventDefault()
+  const deleteForm = (e) => {
+    e.preventDefault();
     const slideDownWrapper = e.target.closest('.react-slidedown'),
-      form = e.target.closest('form')
+      form = e.target.closest('form');
     if (slideDownWrapper) {
-      slideDownWrapper.remove()
+      slideDownWrapper.remove();
     } else {
-      form.remove()
+      form.remove();
     }
-  }
+  };
 
   return (
     <Card>
       <CardHeader>
-        <h4 className='card-title'>With Animation</h4>
+        <h4 className="card-title">With Animation</h4>
       </CardHeader>
       <CardBody>
         <CardText>
-          Use we're using <code>react-slidedown</code> component for slidedown animation. Refer this{' '}
-          <a href='https://github.com/frankwallis/react-slidedown' target='_blank' rel='noopener noreferrer'>
+          Use we're using <code>react-slidedown</code> component for slidedown
+          animation. Refer this{' '}
+          <a
+            href="https://github.com/frankwallis/react-slidedown"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             link
           </a>{' '}
           for more info.
         </CardText>
         <Repeater count={count}>
-          {i => {
-            const Tag = i === 0 ? 'div' : SlideDown
+          {(i) => {
+            const Tag = i === 0 ? 'div' : SlideDown;
             return (
               <Tag key={i}>
                 <Form>
-                  <Row className='justify-content-between align-items-center'>
-                    <Col md={4} className='mb-md-0 mb-1'>
-                      <Label className='form-label' for={`animation-item-name-${i}`}>
+                  <Row className="justify-content-between align-items-center">
+                    <Col md={4} className="mb-md-0 mb-1">
+                      <Label
+                        className="form-label"
+                        for={`animation-item-name-${i}`}
+                      >
                         Item Name
                       </Label>
-                      <Input type='text' id={`animation-item-name-${i}`} placeholder='Vuexy Admin Template' />
+                      <Input
+                        type="text"
+                        id={`animation-item-name-${i}`}
+                        placeholder="Admin Template"
+                      />
                     </Col>
-                    <Col md={2} className='mb-md-0 mb-1'>
-                      <Label className='form-label' for={`animation-cost-${i}`}>
+                    <Col md={2} className="mb-md-0 mb-1">
+                      <Label className="form-label" for={`animation-cost-${i}`}>
                         Cost
                       </Label>
-                      <Input type='number' id={`animation-cost-${i}`} placeholder='32' />
+                      <Input
+                        type="number"
+                        id={`animation-cost-${i}`}
+                        placeholder="32"
+                      />
                     </Col>
-                    <Col md={2} className='mb-md-0 mb-1'>
-                      <Label className='form-label' for={`animation-quantity-${i}`}>
+                    <Col md={2} className="mb-md-0 mb-1">
+                      <Label
+                        className="form-label"
+                        for={`animation-quantity-${i}`}
+                      >
                         Quantity
                       </Label>
-                      <Input type='number' id={`animation-quantity-${i}`} placeholder='1' />
+                      <Input
+                        type="number"
+                        id={`animation-quantity-${i}`}
+                        placeholder="1"
+                      />
                     </Col>
-                    <Col md={2} className='mb-md-0 mb-1'>
-                      <Label className='form-label' for={`animation-price-${i}`}>
+                    <Col md={2} className="mb-md-0 mb-1">
+                      <Label
+                        className="form-label"
+                        for={`animation-price-${i}`}
+                      >
                         Price
                       </Label>
                       <input
                         readOnly
                         disabled
-                        value='$32'
-                        placeholder='$32'
+                        value="$32"
+                        placeholder="$32"
                         id={`animation-price-${i}`}
-                        className='form-control-plaintext'
+                        className="form-control-plaintext"
                       />
                     </Col>
                     <Col md={2}>
-                      <Button color='danger' className='text-nowrap px-1' onClick={deleteForm} outline>
-                        <X size={14} className='me-50' />
+                      <Button
+                        color="danger"
+                        className="text-nowrap px-1"
+                        onClick={deleteForm}
+                        outline
+                      >
+                        <X size={14} className="me-50" />
                         <span>Delete</span>
                       </Button>
                     </Col>
@@ -92,16 +134,16 @@ const RepeatingForm = () => {
                   </Row>
                 </Form>
               </Tag>
-            )
+            );
           }}
         </Repeater>
-        <Button className='btn-icon' color='primary' onClick={increaseCount}>
+        <Button className="btn-icon" color="primary" onClick={increaseCount}>
           <Plus size={14} />
-          <span className='align-middle ms-25'>Add New</span>
+          <span className="align-middle ms-25">Add New</span>
         </Button>
       </CardBody>
     </Card>
-  )
-}
+  );
+};
 
-export default RepeatingForm
+export default RepeatingForm;
